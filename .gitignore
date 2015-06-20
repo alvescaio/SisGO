@@ -1,0 +1,12 @@
+$ cat .gitignore
+
+# Ignorar arquivos específicos
+    #.DS_Store
+
+# Use curingas como
+    #*~
+    #*.swp
+
+# Ignorar todos os diretórios e arquivos em um diretório.
+nbproject/private/* 
+

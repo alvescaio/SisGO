@@ -1,0 +1,42 @@
+body {
+  background-color: #fafafa;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+/**
+#nav-logo{
+    margin-left: 20px;
+}
+**/
+
+#navbar{
+    box-shadow: 0 0;
+}
+
+.pesquisa{
+    background-color: rgba(0, 0, 0, 0.074);
+    height: 50px;
+    margin-top: 7px;
+    margin-right: 20px;
+    width: 390px;
+}
+
+#pesquisa-input{
+    line-height: 0em;
+    margin-bottom: -5px;
+}
+
+#icon-nav-search-1, #icon-nav-search-2{
+    margin-top: -5px;
+}
+
+#cabecalho{
+    width: 100%;
+    height: 500px;
+    background-color: #fefefe
+}
