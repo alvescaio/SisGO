@@ -77,7 +77,7 @@
           <form class="col s12">
             <div class="row">
               <div class="input-field col s6">
-                <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+                <input id="first_name" type="text" class="validate">
                 <label for="first_name">First Name</label>
               </div>
               <div class="input-field col s6">
@@ -103,6 +103,32 @@
                 <label for="email">Email</label>
               </div>
             </div>
+
+            <div class="row">
+                <div class="input-field col s12">
+                    <select class="selection">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-field col s12">
+                    <div class="range_field">
+                        <input type="range" min="0" max="100" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-field col s12">
+                    <input type="date" class="datepicker"/>
+                </div>
+            </div>
+
           </form>
         </div>
 
@@ -128,7 +154,8 @@
 
     <script type="text/javascript">
         $( document ).ready(function(){
-            $('.select').material_select();
+            $('.datepicker').pickadate();
+            $('select').material_select();
             $('.dropdown-button').dropdown();
             $(".button-collapse").sideNav();
         });
