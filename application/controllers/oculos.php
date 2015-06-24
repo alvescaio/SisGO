@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Dashboard extends CI_Controller {
+class Oculos extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -20,7 +20,7 @@ class Dashboard extends CI_Controller {
 	public function index()
 	{
         $this->load->helper('url');
-		$this->load->view('dashboard');
+		$this->load->view('cadastroOculos');
 	}
 }
 
