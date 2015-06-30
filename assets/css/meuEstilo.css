@@ -13,9 +13,19 @@ main {
     margin-left: 20px;
 }
 **/
+.container{
+    padding-top: 60px;
+}
 
 #navbar{
     box-shadow: 0 0;
+}
+
+#backend{
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    z-index: -1;
 }
 
 .pesquisa{
@@ -36,5 +46,6 @@ main {
 }
 
 #cabecalho{
+    padding: 20px 40px;
     background-color: #fefefe
 }

@@ -15,21 +15,24 @@
     <!--Import meuEstilo.css-->
     <link type="text/css" rel="stylesheet" href="<?php echo base_url(); ?>assets/css/meuEstilo.css"  media="screen,projection"/>
 
+    <!--Import materialize-icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
   </head>
 
   <body>
 
-      <!-- Estrutura dropdown -->
+      <!-- Estrutura dropdown
       <ul class="dropdown-content" id="dropdown1">
           <li><a href="#">One</a></li>
           <li><a href="#">Two</a></li>
           <li class="divider"></li>
           <li><a href="#">Three</a></li>
       </ul>
-
+        -->
 
      <!-- NAVBAR MENU -->
-        <nav id="navbar">
+        <nav id="navbar" class="red lighten-2">
           <div class="nav-wrapper">
 
             <!-- Logomarca -->
@@ -49,10 +52,11 @@
                       </div>
                     </form>
                 </li>
-              <li><a href="sass.html">Sass</a></li>
-              <li class="active"><a href="components.html">Components</a></li>
-              <!-- Dropdown Trigger -->
-              <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
+              <li><a href="home.html">Home</a></li>
+              <li class="active"><a href="sass.html">Sass</a></li>
+              <li><a href="components.html">Components</a></li>
+              <!-- Dropdown Trigger
+              <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="mdi-navigation-arrow-drop-down right"></i></a></li> -->
             </ul>
 
             <!-- menu para telas pequenas -->
@@ -66,67 +70,79 @@
           </div>
         </nav>
 
+        <div class="row red lighten-2" id="backend">
+        </div>
 
      <div class="container">
-        <div class="row">
+        <div class="row z-depth-1">
             <div class="col s12" id="cabecalho">
 
         <!-- Formulário -->
         <div class="row">
+           <div class="col s12">
+               <h3>Cadastro de óculos</h3>
+           </div>
+           <div class="col s12">
+            <div class="card-panel teal">
+              <span class="white-text">
+                    Preencha o formulário para cadastrar um óculos no estoque da ótica.<br>
+                    <b>OBS: o preço de compra será multiplicado pela quantidade e descontado no caixa.</b>
+              </span>
+            </div>
+          </div>
           <form class="col s12">
+
             <div class="row">
-              <div class="input-field col s6">
+              <div class="input-field col l4 m4 s12">
                 <input id="referencia" type="text" class="validate">
                 <label for="referencia">Referência</label>
               </div>
-              <div class="input-field col s6">
+
+
+              <div class="input-field col l4 m4 s12">
                 <input id="modelo" type="text" class="validate">
                 <label for="modelo">Modelo</label>
               </div>
-            </div>
-            <div class="row">
-              <div class="input-field col s12">
-                <input id="preco" type="text" class="validate">
-                <label for="preco">Preço</label>
-              </div>
-            </div>
-            <div class="row">
-              <div class="input-field col s12">
+
+              <div class="input-field col l4 m4 s12">
                 <input id="cor" type="text" class="validate">
                 <label for="cor">Cor</label>
               </div>
-            </div>
-            <div class="row">
-              <div class="input-field col s12">
-                <input id="tipo" type="text" class="validate">
-                <label for="tipo">Tipo</label>
-              </div>
-            </div>
 
-            <div class="row">
-                <div class="input-field col s12">
-                    <select class="selection">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
+                <div class="col l12 m12 s12">
+                    <label for="tipo">Tipo</label>
+                    <select class="selection" id="tipo">
+                        <option value="sol">Óculos de sol</option>
+                        <option value="grau">Óculos de grau</option>
                     </select>
                 </div>
-            </div>
 
-            <div class="row">
-                <div class="input-field col s12">
-                    <div class="range_field">
-                        <input type="range" min="0" max="100" />
-                    </div>
-                </div>
-            </div>
 
-            <div class="row">
-                <div class="input-field col s12">
-                   <label for="data">Data</label>
-                    <input type="date" id="data" class="datepicker"/>
+              <div class="input-field col l4 m4 s12">
+                <input id="precocompra" type="text" class="validate">
+                <label for="precocompra">Preço de compra</label>
+              </div>
+
+              <div class="input-field col l4 m4 s12">
+                <input id="precovenda" type="text" class="validate">
+                <label for="precovenda">Preço de venda</label>
+              </div>
+
+                <div class="input-field col l4 m4 s12">
+                  <input id="qtd" type="text" class="validate">
+                    <label for="qtd">Qtd</label>
                 </div>
+
+                <div class="input-field col l12 m12 s12 center-align">
+                  <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                  <label for="icon_prefix2">Descrição</label>
+                </div>
+
+                <div class="input-field col l12 m12 s12 right-align">
+                  <button class="btn waves-effect waves-light" type="submit" name="action">Cadastrar
+                  </button>
+                </div>
+
             </div>
 
           </form>
@@ -136,6 +152,18 @@
        </div>
   </div>
 
+
+  <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+    <a class="btn-floating btn-large red">
+      <i class="material-icons">view_list</i>
+    </a>
+    <ul>
+      <li><a class="btn-floating red"><i class="material-icons">settings</i></i></a></li>
+      <li><a class="btn-floating yellow darken-1"><i class="material-icons">store</i></a></li>
+      <li><a class="btn-floating green"><i class="material-icons">contact_phone</i></a></li>
+      <li><a class="btn-floating blue"><i class="material-icons">add_shopping_cart</i></a></li>
+    </ul>
+  </div>
 
 
 
@@ -158,6 +186,7 @@
             $('select').material_select();
             $('.dropdown-button').dropdown();
             $(".button-collapse").sideNav();
+            $('.fixed-action-btn').openFAB();
         });
     </script>
 
