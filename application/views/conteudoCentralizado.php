@@ -75,11 +75,11 @@
         <div class="row">
           <form class="col s12">
             <div class="row">
-              <div class="input-field col s6">
+              <div class="input-field col l12 s6">
                 <input id="first_name" type="text" class="validate">
                 <label for="first_name">First Name</label>
               </div>
-              <div class="input-field col s6">
+              <div class="input-field col l12 s6">
                 <input id="last_name" type="text" class="validate">
                 <label for="last_name">Last Name</label>
               </div>
@@ -128,6 +128,17 @@
                 </div>
             </div>
 
+            <div class="input-field col s12">
+                <select>
+                  <option value="" disabled selected>Choose your option</option>
+                  <option value="1">Option 1</option>
+                  <option value="2">Option 2</option>
+                  <option value="3">Option 3</option>
+                </select>
+                <label>Materialize Select</label>
+            </div>
+
+
           </form>
         </div>
 
@@ -148,7 +159,7 @@
     </footer>
 
     <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="<?php echo base_url().'assets/js/jquery-2.1.4.min.js'?>"></script>
     <script type="text/javascript" src="<?php echo base_url().'assets/js/materialize.min.js'?>"></script>
 
     <script type="text/javascript">

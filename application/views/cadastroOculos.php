@@ -124,7 +124,8 @@
 
             <div class="row">
                 <div class="input-field col s12">
-                    <input type="date" class="datepicker"/>
+                   <label for="data">Data</label>
+                    <input type="date" id="data" class="datepicker"/>
                 </div>
             </div>
 
