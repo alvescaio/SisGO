@@ -22,6 +22,12 @@ class Oculos extends CI_Controller {
         $this->load->helper('url');
 		$this->load->view('cadastroOculos');
 	}
+
+    public function estoque()
+    {
+        $this->load->helper('url');
+		$this->load->view('estoqueOculos');
+    }
 }
 
 /* End of file welcome.php */

@@ -22,26 +22,27 @@
 
   <body>
 
-      <!-- Estrutura dropdown
+      <!-- Estrutura dropdown -->
       <ul class="dropdown-content" id="dropdown1">
           <li><a href="#">One</a></li>
           <li><a href="#">Two</a></li>
           <li class="divider"></li>
           <li><a href="#">Three</a></li>
       </ul>
-        -->
 
      <!-- NAVBAR MENU -->
+       <div class="navbar-fixed hide-on-large-only">
         <nav id="navbar" class="red lighten-2">
           <div class="nav-wrapper">
 
             <!-- Logomarca -->
-            <a href="#!" class="brand-logo hide-on-med-and-down" style="margin-left: 50px">Espaço Nitidez</a>
             <a href="#!" class="brand-logo hide-on-large-only">Espaço Nitidez</a>
 
             <!-- botão de menu para dispositivos mobile-->
             <a href="#" data-activates="mobile-demo" class="button-collapse right"><i class="mdi-navigation-menu"></i></a>
 
+
+            <!-- MENU TELAS GRANDES
             <ul class="right hide-on-med-and-down">
                 <li class="pesquisa">
                     <form>
@@ -54,10 +55,11 @@
                 </li>
               <li><a href="home.html">Home</a></li>
               <li class="active"><a href="sass.html">Sass</a></li>
-              <li><a href="components.html">Components</a></li>
+              <li><a href="components.html">Components</a></li>-->
+
               <!-- Dropdown Trigger
-              <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="mdi-navigation-arrow-drop-down right"></i></a></li> -->
-            </ul>
+              <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
+            </ul>-->
 
             <!-- menu para telas pequenas -->
             <ul class="side-nav" id="mobile-demo">
@@ -69,18 +71,28 @@
 
           </div>
         </nav>
-
-        <div class="row red lighten-2" id="backend">
         </div>
 
-     <div class="container">
+       <div class="row red lighten-2 hide-on-med-and-down" id="topo">
+           <div class="container">
+               <div class="row">
+                   <div class="col l12 white-text">
+                       <h3 class="upercase">Ótica Espaço Nitidez</h3>
+                   </div>
+               </div>
+           </div>
+        </div>
+        <div class="row red lighten-2 hide-on-med-and-down" id="backend">
+        </div>
+
+     <div class="container" id="container">
         <div class="row z-depth-1">
             <div class="col s12" id="cabecalho">
 
         <!-- Formulário -->
         <div class="row">
            <div class="col s12">
-               <h3>Cadastro de óculos</h3>
+               <h4>Cadastro de óculos</h4>
            </div>
            <div class="col s12">
             <div class="card-panel teal">
@@ -153,15 +165,15 @@
   </div>
 
 
-  <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+  <div class="fixed-action-btn hide-on-med-and-down" style="bottom: 45px; right: 24px;">
     <a class="btn-floating btn-large red">
-      <i class="material-icons">view_list</i>
+      <i class="material-icons">more_horiz</i>
     </a>
     <ul>
-      <li><a class="btn-floating red"><i class="material-icons">settings</i></i></a></li>
-      <li><a class="btn-floating yellow darken-1"><i class="material-icons">store</i></a></li>
-      <li><a class="btn-floating green"><i class="material-icons">contact_phone</i></a></li>
-      <li><a class="btn-floating blue"><i class="material-icons">add_shopping_cart</i></a></li>
+      <li><a class="btn-floating red tooltipped" data-position="left" data-delay="20" data-tooltip="Configurações"><i class="material-icons">settings</i></a></li>
+      <li><a class="btn-floating yellow darken-1 tooltipped" data-position="left" data-delay="20" data-tooltip="Painel de controle"><i class="material-icons">store</i></a></li>
+      <li><a class="btn-floating green tooltipped" data-position="left" data-delay="20" data-tooltip="Clientes" ><i class="material-icons">contact_phone</i></a></li>
+      <li><a class="btn-floating blue tooltipped" data-position="left" data-delay="20" data-tooltip="Nova venda" ><i class="material-icons">add_shopping_cart</i></a></li>
     </ul>
   </div>
 
@@ -170,18 +182,18 @@
     <footer class="page-footer">
       <div class="footer-copyright">
         <div class="container">
-        © 2015 Copyright Text
-        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        © 2015 Copyright Caio Alves
+        <a class="grey-text text-lighten-4 right" href="#!">Mais informações</a>
         </div>
       </div>
     </footer>
 
     <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="<?php echo base_url().'assets/js/jquery-2.1.4.min.js'?>"></script>
     <script type="text/javascript" src="<?php echo base_url().'assets/js/materialize.min.js'?>"></script>
 
     <script type="text/javascript">
-        $( document ).ready(function(){
+        $(document ).ready(function(){
             $('.datepicker').pickadate();
             $('select').material_select();
             $('.dropdown-button').dropdown();
