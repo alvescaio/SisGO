@@ -1,6 +1,6 @@
 # SisGO
 
-O SisGO é um projeto de software voltado para a web, que visa possibilitar um melhor gerenciamento de logística de uma empre de ótica, onde faz-se necessário controlar fluxo de caixa e informações dos clientes. Alguns objetivos almejados são:
+O SisGO é um projeto de software voltado para a web, que visa possibilitar um melhor gerenciamento de logística de uma empresa de ótica, onde faz-se necessário controlar fluxo de caixa e informações dos clientes. Alguns objetivos almejados são:
 
   - Automatizar atividades essenciais para o funcionamento e logística da empresa
   - Armazenar informações da empresa em uma base de dados, evitando perda de informações
