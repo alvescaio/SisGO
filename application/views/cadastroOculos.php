@@ -92,7 +92,7 @@
         <!-- Formulário -->
         <div class="row">
            <div class="col s12">
-               <h4>Cadastro de óculos</h4>
+               <h4>Compra de óculos</h4>
            </div>
            <div class="col s12">
             <div class="card-panel teal">
@@ -102,28 +102,28 @@
               </span>
             </div>
           </div>
-          <form class="col s12">
+          <form class="col s12" action="<?php echo base_url().'oculos/cadastro'?>" method="post">
 
             <div class="row">
               <div class="input-field col l4 m4 s12">
-                <input id="referencia" type="text" class="validate">
+                <input id="referencia" name="referencia" type="text" class="validate">
                 <label for="referencia">Referência</label>
               </div>
 
 
               <div class="input-field col l4 m4 s12">
-                <input id="modelo" type="text" class="validate">
+                <input id="modelo" name="modelo" type="text" class="validate">
                 <label for="modelo">Modelo</label>
               </div>
 
               <div class="input-field col l4 m4 s12">
-                <input id="cor" type="text" class="validate">
+                <input id="cor" name="cor" type="text" class="validate">
                 <label for="cor">Cor</label>
               </div>
 
                 <div class="col l12 m12 s12">
                     <label for="tipo">Tipo</label>
-                    <select class="selection" id="tipo">
+                    <select class="selection" name="tipo" id="tipo">
                         <option value="sol">Óculos de sol</option>
                         <option value="grau">Óculos de grau</option>
                     </select>
@@ -131,22 +131,22 @@
 
 
               <div class="input-field col l4 m4 s12">
-                <input id="precocompra" type="text" class="validate">
-                <label for="precocompra">Preço de compra</label>
+                <input id="precocompra" name="preco_compra" type="text" class="validate">
+                <label for="precocompra">Preço de compra (R$)</label>
               </div>
 
               <div class="input-field col l4 m4 s12">
-                <input id="precovenda" type="text" class="validate">
-                <label for="precovenda">Preço de venda</label>
+                <input id="precovenda" name="preco_venda" type="text" class="validate">
+                <label for="precovenda">Preço de venda (R$)</label>
               </div>
 
                 <div class="input-field col l4 m4 s12">
-                  <input id="qtd" type="text" class="validate">
+                  <input id="qtd" name="qtd" type="number" class="validate">
                     <label for="qtd">Qtd</label>
                 </div>
 
                 <div class="input-field col l12 m12 s12 center-align">
-                  <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                  <textarea id="icon_prefix2" name="descricao" class="materialize-textarea"></textarea>
                   <label for="icon_prefix2">Descrição</label>
                 </div>
 
@@ -170,10 +170,10 @@
       <i class="material-icons">more_horiz</i>
     </a>
     <ul>
-      <li><a class="btn-floating red tooltipped" data-position="left" data-delay="20" data-tooltip="Configurações"><i class="material-icons">settings</i></a></li>
-      <li><a class="btn-floating yellow darken-1 tooltipped" data-position="left" data-delay="20" data-tooltip="Painel de controle"><i class="material-icons">store</i></a></li>
-      <li><a class="btn-floating green tooltipped" data-position="left" data-delay="20" data-tooltip="Clientes" ><i class="material-icons">contact_phone</i></a></li>
-      <li><a class="btn-floating blue tooltipped" data-position="left" data-delay="20" data-tooltip="Nova venda" ><i class="material-icons">add_shopping_cart</i></a></li>
+      <li><a class="btn-floating red tooltipped" data-position="left" data-delay="25" data-tooltip="Configurações"><i class="material-icons">settings</i></a></li>
+      <li><a class="btn-floating yellow darken-1 tooltipped" data-position="left" data-delay="25" data-tooltip="Painel de controle"><i class="material-icons">store</i></a></li>
+      <li><a class="btn-floating green tooltipped" data-position="left" data-delay="25" data-tooltip="Clientes" ><i class="material-icons">contact_phone</i></a></li>
+      <li><a class="btn-floating blue tooltipped" data-position="left" data-delay="25" data-tooltip="Nova venda" ><i class="material-icons">add_shopping_cart</i></a></li>
     </ul>
   </div>
 

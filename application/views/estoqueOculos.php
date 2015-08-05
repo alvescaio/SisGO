@@ -212,10 +212,10 @@
       <i class="material-icons">more_horiz</i>
     </a>
     <ul>
-      <li><a class="btn-floating red tooltipped" data-position="left" data-delay="20" data-tooltip="Configurações"><i class="material-icons">settings</i></a></li>
-      <li><a class="btn-floating yellow darken-1 tooltipped" data-position="left" data-delay="20" data-tooltip="Painel de controle"><i class="material-icons">store</i></a></li>
-      <li><a class="btn-floating green tooltipped" data-position="left" data-delay="20" data-tooltip="Clientes" ><i class="material-icons">contact_phone</i></a></li>
-      <li><a class="btn-floating blue tooltipped" data-position="left" data-delay="20" data-tooltip="Nova venda" ><i class="material-icons">add_shopping_cart</i></a></li>
+      <li><a class="btn-floating red tooltipped" data-position="left" data-delay="25" data-tooltip="Configurações"><i class="material-icons">settings</i></a></li>
+      <li><a class="btn-floating yellow darken-1 tooltipped" data-position="left" data-delay="25" data-tooltip="Painel de controle"><i class="material-icons">store</i></a></li>
+      <li><a class="btn-floating green tooltipped" data-position="left" data-delay="25" data-tooltip="Clientes" ><i class="material-icons">contact_phone</i></a></li>
+      <li><a class="btn-floating blue tooltipped" data-position="left" data-delay="25" data-tooltip="Nova venda" ><i class="material-icons">add_shopping_cart</i></a></li>
     </ul>
   </div>
 
